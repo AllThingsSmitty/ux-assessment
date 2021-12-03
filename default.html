@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example page</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  
+  <div class="page__container">
+    <!-- header -->
+    <header role="banner">
+      <div class="skip-nav">
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
+      </div>
+      <div class="header__container">
+        <div class="header__content">
+          <div class="header__title">Example Page</div>
+          <div class="header__nav">
+            <nav role="navigation" aria-label="main navigation">
+              <li><a href="#" class="has-children" aria-haspopup="true">Item 1</a>
+                <ul>
+                  <li><a href="#">Item Title 2a</a></li>
+                  <li><a href="#">Item 2b</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main id="main-content">
+      <!-- feature -->
+      <section class="feature" role="region" aria-labelledby="region-heading">
+        <div class="feature__container">
+          <div class="feature__content">
+            <div class="feature__title">
+              <div class="feature__headline">
+                <h1 id="region-heading">Welcome to my example page</h1>
+              </div>
+              <div class="feature__text">This is our new assessment</div>
+            </div>
+            <div class="feature-image__container">
+              <div class="feature__image"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /feature -->
+
+      <!-- new-feature -->
+      <div class="new-feature">
+        <div class="new-feature__container">
+          <div class="new-feature__inner-container">
+            <div class="new-feature__content">
+              <h3>These are cards</h3>
+              <p>These cards are cool &amp; tell you things about animals! Did you know a bird can run up to 65mph? And a cat can jump 26 feet in the air to catch prey? Animals are so cool.</p>
+              <p><a href="#">Check out more animal facts</a>. There are so many facts to learn.</p>
+              <div class="action">              
+                <p>I want to see:
+                  <input type="checkbox" id="cb-birds" name="birds" onclick="toggleBirds();" checked> <label for="cbBirds">Birds</label>
+                  <input type="checkbox" id="cb-cats" name="cats" onclick="toggleCats();" checked> <label for="cbBirds">Cats</label>
+                </p>
+              </div>
+            </div>
+  
+            <div class="new-feature__row">
+              <!-- column -->            
+              <div class="col-1-4 card__cat">
+                <!-- card -->
+                <div class="card">
+                  <div class="card-image__container image__cat" style="background-image: url('img/cat.png')" role="img" aria-label="image of cat looking up"></div>
+                  <div class="card-content">
+                    <div class="card-content__heading">This is card 1</div>
+                    <div class="card-content__body">Cats use their whiskers to determine space between objects in the dark.</div>
+                    <div class="card-content__action">
+                      <div class="card-content__action-text">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-describedby="new-window-0" rel="noopener">Click &amp; go!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!-- /column -->
+  
+              <!-- column -->
+              <div class="col-1-4 card__bird">
+                <!-- card -->
+                <div class="card">
+                  <div class="card-image__container image__bird" style="background-image: url('img/birds.png')" role="img" aria-label="image of birds in flight"></div>
+                  <div class="card-content">
+                    <div class="card-content__heading">This is card 2</div>
+                    <div class="card-content__body">Some birds have membranes that cover their eyes like goggles, enabling them to see while traveling at high speeds.</div>
+                    <div class="card-content__action">
+                      <div class="card-content__action-text">
+                        <a href="#">Click &amp; go!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!-- /column --> 
+
+              <!-- column -->
+              <div class="col-1-4 card__cat">
+                <!-- card -->
+                <div class="card">
+                  <div class="card-image__container image__cat" style="background-image: url('img/cat.png')"></div>
+                  <div class="card-content">
+                    <div class="card-content__heading">This is card 3</div>
+                    <div class="card-content__body">The cheetah is the only cat that can't retract its claws.</div>
+                    <div class="card-content__action">
+                      <div class="card-content__action-text">
+                        <a href="#">Click &amp; go!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!-- /column -->
+                
+              <!-- column -->
+              <div class="col-1-4 card__bird">
+                <!-- card -->
+                <div class="card">
+                  <div class="card-image__container image__bird" style="background-image: url('img/birds.png')"></div>
+                  <div class="card-content">
+                    <div class="card-content__heading">This is card 4</div>
+                    <div class="card-content__body">Peregrine falcons can fly up to and sometimes surpassing 200mph as they hunt prey.</div>
+                    <div class="card-content__action">
+                      <div class="card-content__action-text">
+                        <a href="#">Click &amp; go!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!-- /column -->
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /new-feature -->
+
+      <!-- page-content -->
+      <div class="page-content">
+        <div class="page-content__container">
+          <div class="page-content__row">
+            <article class="page-content__text">
+              <h3>Here is some constrained content</h3>
+              <p>Where the metal hits the meat player-coach but upsell so please use "solutionise" instead of solution ideas! :). Turn the crank what are the expectations and collaboration through advanced technology yet we need to dialog around your choice of work attire are there any leftovers in the kitchen? those options are already baked in with this model, yet clear blue water.</p>
+              <p>Products need full resourcing and support from a cross-functional team in order to be built, maintained, and evolved quick-win or root-and-branch review. We need to get all stakeholders up to speed and in the right place nobody's fault it could have been managed better drink from the firehose we need to make the new version clean and sexy crisp ppt.</p>
+              <p>Net net mobile friendly. Synergize productive mindfulness bench mark, loop back. Quick win synergize productive mindfulness nor hit the ground running yet when does this sunset?</p>
+            </article>
+          </div>
+          <div class="page-content__row">  
+
+            <!-- column -->
+            <div class="col-1-3">
+              <div class="list__container">
+                <h4>List of things</h4>
+                <ul>
+                  <li>Thing 1</li>
+                  <li>Another thing</li>
+                  <li>THE thing</li>
+                  <li>Thingamabob</li>
+                  <li>Thingles</li>
+                </ul>  
+              </div>
+            </div>
+            <!-- /column -->
+
+            <!-- column -->
+            <div class="col-1-3">
+              <div class="list__container">
+                <h4>Have you heard</h4>
+                <p>There was a duck at a store.</p>
+                <p>He ate for free. I should have ordered him more expensive food!</p>
+                <p>The lesson here is DUCKS EAT FOR FREE at that restaurant.</p>
+              </div>
+            </div>
+            <!-- /column -->
+
+            <!-- column -->
+            <div class="col-1-3">
+              <div class="list__container">
+                <h4>Picture of some things</h4>
+                <div class="list__layout">
+                  <div class="list__image"></div>
+                  <div class="list__content">
+                    <p>These guys are pretty coo'. Thing one and thing 2. You'll like what they do. Such fun from so few!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /column -->
+            
+          </div>
+        </div>
+      </div>   
+      <!-- /page-content -->
+ 
+    </main>
+    <!-- /main -->
+  
+    <!-- footer -->
+    <footer role="contentinfo">
+      <div class="footer__container">
+        <div class="footer__content">&copy; <span id="current-year"></span> Example Company Name. All rights reserved.</div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <div class="sr-only">
+      <span aria-hidden="true" id="new-window-0">Opens in a new window</span>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('#current-year').innerText = new Date().getFullYear();
+  </script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
