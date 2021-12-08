@@ -20,14 +20,16 @@
           <div class="header__title">Example Page</div>
           <div class="header__nav">
             <nav role="navigation" aria-label="main navigation">
-              <li><a href="#" class="has-children" aria-haspopup="true">Item 1</a>
-                <ul>
-                  <li><a href="#">Item Title 2a</a></li>
-                  <li><a href="#">Item 2b</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Item 2</a></li>
-              <li><a href="#">Item 3</a></li>
+              <ul>
+                <li><a href="#" class="has-children" aria-haspopup="true">Item 1</a>
+                  <ul>
+                    <li><a href="#">Item Title 2a</a></li>
+                    <li><a href="#">Item 2b</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
             </nav>
           </div>
         </div>
@@ -65,8 +67,8 @@
               <p><a href="#">Check out more animal facts</a>. There are so many facts to learn.</p>
               <div class="action">              
                 <p>I want to see:
-                  <input type="checkbox" id="cb-birds" name="birds" onclick="toggleBirds();" checked> <label for="cbBirds">Birds</label>
-                  <input type="checkbox" id="cb-cats" name="cats" onclick="toggleCats();" checked> <label for="cbBirds">Cats</label>
+                  <input type="checkbox" id="cbBirds" name="birds" onclick="toggleBirds();" checked> <label for="cbBirds">Birds</label>
+                  <input type="checkbox" id="cbCats" name="cats" onclick="toggleCats();" checked> <label for="cbCats">Cats</label>
                 </p>
               </div>
             </div>

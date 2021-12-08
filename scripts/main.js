@@ -1,16 +1,14 @@
 const elBird = document.querySelectorAll('.card__bird'),
     elCat = document.querySelectorAll('.card__cat'),
-    cbBirds = document.getElementById('cb-birds'),
-    cbCats = document.getElementById('cb-cats');
+    cbBirds = document.getElementById('cbBirds'),
+    cbCats = document.getElementById('cbCats');
 
 function toggleBirds() {
     for (let i = 0; i < elBird.length; i++) {
         if (cbBirds.checked == true) {
-            elBird[i].style.display = 'flex';
-            elCat[i].classList.remove('col-1-2');
+            elBird[i].style.display = 'block';
         } else {
             elBird[i].style.display = 'none';
-            elCat[i].classList.add('col-1-2');
         }
     }
 }
@@ -18,11 +16,9 @@ function toggleBirds() {
 function toggleCats() {
     for (let i = 0; i < elCat.length; i++) {
         if (cbCats.checked == true) {
-            elCat[i].style.display = 'flex';
-            elBird[i].classList.remove('col-1-2');
+            elCat[i].style.display = 'block';
          } else {
              elCat[i].style.display = 'none'
-             elBird[i].classList.add('col-1-2');
          }
     }
 }
